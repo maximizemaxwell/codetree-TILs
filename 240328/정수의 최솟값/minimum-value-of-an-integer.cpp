@@ -3,11 +3,11 @@ using namespace std;
 
 int Minimum(int a, int b, int c) {
     int min;
-    if (a > b) {
-        if (b > c) min = c;
+    if (a >= b) {
+        if (b >= c) min = c;
         else min = b;}
-    if (b > a) {
-        if (a > c) min = c;
+    if (b >= a) {
+        if (a >= c) min = c;
         else min = a;
     }
     return min;
