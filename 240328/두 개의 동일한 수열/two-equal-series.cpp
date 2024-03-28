@@ -18,8 +18,12 @@ int main() {
 
     bool fire = true;
     for (int i = 0; i < n; i++) {
-        if (a[i] != b[i]) fire = false;
+        if (a[i] != b[i]) {
+            fire = false;
+            break;
+        }
     }
+
     if (fire = true) cout << "Yes";
     else cout << "No";
     
