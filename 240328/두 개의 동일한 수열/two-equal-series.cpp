@@ -24,7 +24,7 @@ int main() {
         }
     }
 
-    if (fire = true) cout << "Yes";
+    if (fire == true) cout << "Yes";
     else cout << "No";
     
 
