@@ -13,7 +13,8 @@ class Student {
     }
     bool operator<(const Student & other) const{
         if(height != other.height) return height> other.height;
-        return weight > other.weight;
+        if (weight ! = other.weight) return weight > other.weight;
+        return num > other.num;
     }
     friend ostream& operator << (ostream& os, const Student& student) {
         os << student.height << ' ' << student.weight << ' ' << student.num << '\n';
