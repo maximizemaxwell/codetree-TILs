@@ -14,25 +14,29 @@ int main() {
     for (int i = 0; i < n; i++) {
         int cnt = 1;
         for (int j = 0; j < n-1; j++) {
-            if (arr[i][j] == arr[i][j+1]) cnt++;
-            if (cnt >= m) {
+            if (arr[i][j] == arr[i][j+1]) 
+            cnt++;   
+            if (cnt == m) {
                 happy++;
                 break;
             }
-        } 
+        
+    }
     }
 
     for (int i = 0; i < n-1; i++) {
         int cnt = 1;
         for (int j = 0; j < n; j++) {
-            if (arr[i][j] == arr[i-1][j]) cnt++;
-            if (cnt >= m) {
+            if (arr[i][j] == arr[i-1][j]) 
+                cnt++;
+            if (cnt == m)
                 happy++;
                 break;
             }
-        }
-    }
-
+        } 
+    
+    
+    if (m==1) happy = n * 2;
     printf("%d", happy);
     return 0;
 }
